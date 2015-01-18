@@ -1,8 +1,16 @@
 <div id='container' ng-controller='ShortenController'>
 <!-- Your code here -->
 
+  <form ng-submit="submit()" ng-controller="ShortenController">
+    <h2>Shorten</h2>
+    <button><a ng-href="/#/links">Go To Links</a></button>
 
-  <input type="text" ng-model='ShortenModel'>
+    <p>Enter Website and hit enter:</p>
+    <input type="text" ng-model="text" name="text"/>
+    <input type="submit" id="submit" value="Submit" ng-click="addLink(text)" />
+    <!-- TODO: pass in something to addLink -->
+    <!-- <pre>list={{list}}</pre> -->
+  </form>
 
 </div>
 

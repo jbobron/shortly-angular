@@ -10,6 +10,7 @@ angular.module('shortly.links', [])
       method:'GET',
       url: '/api/links'
     }).then(function(data){
+      // console.log(data)
       $scope.data.links = data.data;
     });
 
